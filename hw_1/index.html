@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="top">
+            <header class="header center">
+                <div class="header__left">
+                    <a href="index.html" class="logo">electro<span class="last-letter">N</span> </a>
+                    <form class="header__form" action="#">
+                        <input type="text" placeholder="Search for Item...">
+                        <button class="header__button"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header__right">
+                    <div class="dropdown">
+                        <div class="header__count" id="basket-count"></div>
+                        <button id="basket-toggler" class="dropdown__cart"><img class="header__img"
+                                src="https://raw.githubusercontent.com/ksundelife/js/master/img/cart.png" alt="cart"></button>
+                        <div class="dropdown__shopping invisible" id="basket">
+                            <div class="drop__flex" id="basket-items">
+
+                            </div>
+                            <div class="drop__flex">
+                                <div class="dropdown__total">
+                                    <p class="dropdown__p">TOTAL</p>
+                                    <p class="dropdown__p" id="total-sum"></p>
+                                </div>
+                                <div class="dropdown__buttons">
+                                    <button type="reset" class="dropdown__reset" id="clear-add">CLEAR SHOPPING
+                                        CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="products center">
+                <div class="products-wrap" id="catalog">
+                   
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="copyright center">
+                <p class="footer-p1">&copy; 2020 Brand All Rights Reserved.</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com" target="_blank" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.ru" target="_blank" class="social"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.plus.google.com" target="_blank" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
