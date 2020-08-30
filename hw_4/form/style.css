@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+form {
+    display: block;
+    width: 360px;
+    border-radius: 4px;
+    margin: 40px auto;
+    padding: 10px;
+    box-shadow: #cecece 0 0 10px;
+}
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: #f7f7f7 solid 1px;
+    background: #f7f7f7;
+    transition: all ease-in-out .2s;
+    box-shadow: #f7f7f7 inset 0 0 100px 100px;
+}
+textarea {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: #f7f7f7 solid 1px;
+    background: #f7f7f7;
+    transition: all ease-in-out .2s;
+    box-shadow: #f7f7f7 inset 0 0 100px 100px;
+}
+textarea.regexp {
+    height: 210px;
+    margin-bottom: 15px;
+    border: #E0E0E0 solid 1px;
+    background: #fff;
+}
+textarea.regexp-out {
+    height: 210px;
+    margin-bottom: 15px;
+    border: #E0E0E0 solid 1px;
+}
+small {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 100%;
+    margin-top: 2rem;
+    color: #757575;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    background: #68a765;
+    transition: all ease-in-out .2s;
+}
+button:hover {
+    background: #14a10d;
+}
+
+small.error {
+    display: none;
+    margin: 0 0 10px;
+    color: #d32f2f;
+}
+.valide_val input,
+.valide_val textarea {
+    border: #388E3C solid 1px;
+}
+.invalide_val input,
+.invalide_val textarea {
+    position: relative;
+    border: #d32f2f solid 1px;
+}
+.invalide_val > small.error{
+    display: block;
+}
